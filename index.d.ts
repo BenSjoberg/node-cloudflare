@@ -45,6 +45,7 @@ export interface PaginatedResult<T> {
 
 export interface PaginationOptions {
   per_page?: number
+  page?: number
 }
 
 declare function cloudflare(opts: { email: string, key: string }): Cloudflare
