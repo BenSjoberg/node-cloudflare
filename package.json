@@ -10,7 +10,7 @@
     "autocreate": "^1.2.0",
     "es-class": "^2.1.1",
     "got": "^9.6.0",
-    "https-proxy-agent": "^3.0.1",
+    "https-proxy-agent": "^5.0.0",
     "object-assign": "^4.1.1",
     "should-proxy": "^1.0.4",
     "url-pattern": "^1.0.3"
