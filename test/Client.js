@@ -94,9 +94,9 @@ describe('HTTP Client', () => {
       timeout: 42,
       retries: 1337,
       method: 'TEST',
-      body: JSON.stringify({
+      body: {
         name: 'world',
-      }),
+      },
     };
 
     td.when(getter.got(), {ignoreExtraArgs: true}).thenReject();
@@ -236,9 +236,9 @@ describe('HTTP Client', () => {
     const options = {
       json: true,
       method: 'TEST',
-      body: JSON.stringify({
+      body: {
         name: 'world',
-      }),
+      },
       headers: {
         'X-Auth-Key': 'DEADBEEF',
         'X-Auth-Email': 'fake@domain.email',
