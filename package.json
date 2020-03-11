@@ -1,5 +1,5 @@
 {
-  "name": "cloudflare",
+  "name": "@bensjoberg/cloudflare",
   "version": "2.7.0",
   "description": "CloudFlare API client",
   "author": "Terin Stock <terinjokes@gmail.com>",
