@@ -1,6 +1,6 @@
 {
   "name": "@bensjoberg/cloudflare",
-  "version": "2.7.2",
+  "version": "2.7.5",
   "description": "CloudFlare API client",
   "author": "Terin Stock <terinjokes@gmail.com>",
   "bugs": {
@@ -52,6 +52,7 @@
   },
   "files": [
     "index.js",
+    "index.d.ts",
     "lib"
   ],
   "xo": {
