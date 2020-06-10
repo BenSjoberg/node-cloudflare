@@ -8,7 +8,7 @@ export interface Cloudflare {
 
   dnsRecords: {
     browse(zoneID: string, options?: PaginationOptions): Promise<PaginatedResult<DNSRecord[]>>
-    add(zoneID: string, record: NewDNSRecord): Promise<void>
+    add(zoneID: string, record: DNSRecord): Promise<void>
     del(zoneID: string, recordID: string): Promise<void>
   }
 }
@@ -21,13 +21,18 @@ export interface Zone {
 
 export interface DNSRecord {
   name: string
-  id: string
+  id?: string
   type: string
   content: string
   ttl: number
+  proxied?: boolean
+  priority?: number
+  data?: {
+    flags: number
+    tag: string
+    value: string
+  }
 }
-
-export type NewDNSRecord = Omit<DNSRecord, 'id'>
 
 export interface PaginatedResult<T> {
   result: T
